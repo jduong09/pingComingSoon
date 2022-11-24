@@ -1,0 +1,63 @@
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 3rem 0 1.5rem 0;
+}
+#header-logo {
+  display: block;
+  width: 86px;
+  height: 26px;
+  margin: 1rem auto;
+}
+/* Main */
+h2 {
+  color: hsl(0, 0%, 59%);
+  margin: 1rem auto;
+  font-size: 1.5rem;
+}
+
+h2 > span {
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+
+/* Footer */
+/* Form #input-email #input-submit */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+form > input {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5rem 2rem;
+  border-radius: 500px;
+  border: 1px solid hsl(223, 87%, 63%);
+}
+
+#input-email {
+  margin-bottom: .5rem;
+}
+
+#input-submit {
+  background-color: hsl(223, 87%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+#img-landing {
+  display: block;
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+}
