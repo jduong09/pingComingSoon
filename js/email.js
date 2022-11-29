@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const inputEmail = document.getElementById('input-email');
   const spanError = document.querySelector('.div-email > span');
   const inputSubmit = document.getElementById('input-submit');
+  const divImgLanding = document.querySelector('.div-img-landing');
 
   inputSubmit.addEventListener('click', (e) => {
     e.preventDefault();
@@ -13,9 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (re.test(emailValue)) {
       inputEmail.classList.remove('error');
       spanError.classList.add('hide');
+      divImgLanding.classList.remove('error');
     } else {
       inputEmail.classList.add('error');
       spanError.classList.remove('hide');
+      divImgLanding.classList.add('error');
     }
   });
 });
