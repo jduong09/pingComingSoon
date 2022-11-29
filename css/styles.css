@@ -74,6 +74,13 @@ input[type=email]:active, input[type=email]:focus {
   color: hsl(354, 100%, 66%);
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 #input-email.error {
   border-color: hsl(354, 100%, 66%);
 }
@@ -130,4 +137,116 @@ input[type=email]:active, input[type=email]:focus {
 footer > span {
   color: hsl(0, 0%, 59%);
   font-size: 12px;
+}
+
+@media (min-width: 576px) {
+  header {
+    padding: 2.25rem 0 1rem 0;
+  }
+  #header-logo {
+    width: 70px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  form {
+    width: 60%;
+  }
+
+  #img-landing {
+    width: 70%;
+    margin: 3rem auto 6rem auto;
+  }
+
+  .list-social-medias {
+    width: 20.5%;
+  }
+}
+
+@media (min-width: 766px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  form {
+    width: 54%;
+  }
+
+  #img-landing {
+    width: 60%;
+  }
+
+  .list-social-medias {
+    width: 15%;
+  }
+}
+
+@media (min-width: 922px) {
+  header {
+    padding: 2rem 0 .5rem 0;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  form {
+    flex-direction: row;
+  }
+
+  .div-email {
+    width: 65%;
+    margin-bottom: 0;
+  }
+
+  #input-submit {
+    width: 30%;
+    margin: 0;
+  }
+
+  #img-landing {
+    margin: 4rem auto;
+  }
+
+  .list-social-medias {
+    width: 12.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  form {
+    width: 45%;
+  }
+
+  #img-landing {
+    width: 45%;
+  }
+
+  .list-social-medias {
+    width: 9.5%;
+  }
+}
+
+@media (min-width: 1400px) {
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  form {
+    width: 40%;
+  }
+
+  .div-email {
+    width: 67%;
+  }
+
+  #img-landing {
+    width: 40%;
+  }
+
+  .list-social-medias {
+    width: 8%;
+  }
 }
