@@ -8,7 +8,7 @@ body {
   display: none !important;
 }
 
-#input-submit, .list-social-medias > li > a > svg > path {
+#input-submit, .list-social-medias > li > a > svg {
   cursor: pointer;
 }
 
@@ -89,6 +89,10 @@ input[type=email]:active, input[type=email]:focus {
   font-weight: 600;
 }
 
+#input-submit:hover {
+  opacity: .75;
+}
+
 #img-landing {
   display: block;
   width: 85%;
@@ -112,6 +116,15 @@ input[type=email]:active, input[type=email]:focus {
 
 .list-social-medias > li > a > svg > path {
   fill: hsl(223, 87%, 63%);
+}
+
+.list-social-medias > li > a > svg:hover {
+  border-color: hsl(223, 87%, 63%);
+  background-color: hsl(223, 87%, 63%);
+}
+
+.list-social-medias > li > a > svg:hover > path {
+  fill: hsl(0, 0%, 100%)
 }
 
 footer > span {
