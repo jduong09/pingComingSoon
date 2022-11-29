@@ -25,6 +25,7 @@ header {
   height: auto;
   margin: 0 auto;
 }
+
 /* Main */
 h2 {
   color: hsl(0, 0%, 59%);
@@ -153,9 +154,6 @@ footer > span {
 }
 
 @media (min-width: 576px) {
-  header {
-    padding: 2.25rem 0 1rem 0;
-  }
   #header-logo {
     width: 70px;
   }
@@ -179,6 +177,10 @@ footer > span {
 }
 
 @media (min-width: 766px) {
+  body {
+    padding: 0;
+  }
+
   h2 {
     font-size: 1.8rem;
   }
@@ -197,16 +199,14 @@ footer > span {
 }
 
 @media (min-width: 922px) {
-  header {
-    padding: 2rem 0 .5rem 0;
-  }
-
+  
   h2 {
     font-size: 2.25rem;
   }
 
   form {
     flex-direction: row;
+    justify-content: space-around;
   }
 
   .div-email {
@@ -236,12 +236,21 @@ footer > span {
 }
 
 @media (min-width: 1200px) {
+  body {
+    padding: 2rem 0;
+  }
+  
   #div-subscribe {
     font-size: 1rem;
   }
 
   form {
     width: 45%;
+  }
+
+  #input-email, #input-submit {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
   }
 
   #img-landing {
@@ -259,8 +268,7 @@ footer > span {
   }
 
   form {
-    width: 40%;
-    justify-content: space-around;
+    width: 37.5%;
   }
 
   .div-email {
